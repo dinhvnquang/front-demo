@@ -117,6 +117,28 @@
                 de structures fédérées d’ici 3 ans
               </li>
             </ul>
+            <h3 class="sub">Menu 2.3</h3>
+            <ul>
+              <li>Contribuer à ancrer le Service Civique dans le secteur du « grand âge », en contribuant à une
+                mobilisation massive de jeunes dans tous les établissements d’accueil et/ou de soutien aux
+                personnes âgées. Pour en savoir plus les <a href="">conditions d'accès au Service Civique</a>
+              </li>
+              <li>Impliquer et faire adhérer tous les grands acteurs du secteur et les ministères concernés avec
+                un système de gouvernance permettant de « construire ensemble »
+              </li>
+              <li>Un Service Civique de qualité pour tous les jeunes mobilisés auprès des seniors à la mise en
+                place d’un « socle qualité commun » : pour jeunes et tuteurs : formation à la mission et
+                échanges de pratiques ; pour les jeunes : formation civique et citoyenne renforcée et
+                accompagnement vers les métiers de l’aide à la personne
+              </li>
+              <li>Un investissement fort sur l’évaluation et la mesure d’impact (quanti et quali)</li>
+              <li>45 000 personnes âgées touchées en année 1 via la mobilisation, formation,
+                et l’accompagnement d’au moins 2 000 volontaires (parmi les 10 000 annoncés)
+              </li>
+              <li>Au moins 10 000 jeunes par an passant par le socle qualité et des milliers
+                de structures fédérées d’ici 3 ans
+              </li>
+            </ul>
           </div>
 
         </div>
@@ -202,7 +224,22 @@
     });
 
     $(window).scroll(function () {
+      $('.dynamicContentMenu__header > .dynamicContentMenu__item').each(function() {
+        if($(this).hasClass('active')) {
+          $(this).closest('ul').prevAll().addClass('prev');
+          $(this).closest('ul').nextAll().removeClass('prev');
+          $('.dynamicContentMenu__header').removeClass('sub-active');
+          $('.dynamicContentMenu__subheader > .dynamicContentMenu__item').removeClass('prev');
+        }
+      });
 
+      $('.dynamicContentMenu__subheader > .dynamicContentMenu__item').each(function() {
+        if($(this).hasClass('active')) {
+          $(this).prevAll().addClass('prev');
+          $(this).nextAll().removeClass('prev');
+          $(this).closest('.dynamicContentMenu__header ').addClass('sub-active');
+        }
+      });
     });
   });
 </script>
