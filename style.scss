@@ -55,6 +55,10 @@
         > li {
           color: green;
           font-weight: bold;
+
+          &:before {
+            background-color: green;
+          }
         }
       }
 
@@ -72,7 +76,7 @@
           &.active {
             &:before {
               height: 2px;
-              width: 13px;
+              width: 11px;
               border-radius: 0;
               left: 5px;
               top: 7px;
@@ -85,7 +89,7 @@
           }
           &:before {
             height: 2px;
-            width: 8px;
+            width: 6px;
             border-radius: 0;
             left: 5px;
             top: 7px;
