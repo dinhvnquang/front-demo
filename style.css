@@ -1,0 +1,62 @@
+.section-sticky .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.section-sticky .content {
+  display: flex;
+}
+.section-sticky .content .left {
+  width: 33.33%;
+}
+.section-sticky .content .right {
+  width: 66.66%;
+}
+.section-sticky .sticky {
+  padding: 30px 30px 7px;
+  list-style: none;
+}
+.section-sticky .sticky ul {
+  list-style: none;
+}
+.section-sticky .sticky li {
+  margin-bottom: 12px;
+  position: relative;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.section-sticky .sticky li:before {
+  content: "";
+  height: 4px;
+  width: 4px;
+  background-color: green;
+  position: absolute;
+  left: 0;
+  top: 8px;
+  border-radius: 50%;
+}
+.section-sticky .sticky li.active {
+  font-weight: bold;
+  color: red;
+}
+.section-sticky .sticky li.active:before {
+  height: 8px;
+  width: 8px;
+  background-color: red;
+  top: 7px;
+}
+.section-sticky .tab-text {
+  border-radius: 20px;
+  overflow: hidden;
+  margin-bottom: 50px;
+}
+.section-sticky .tab-text .title {
+  font-size: 30px;
+  padding: 20px;
+  background: green;
+  margin: 0;
+}
+.section-sticky .tab-text .description {
+  padding: 20px 30px;
+}
+
+/*# sourceMappingURL=style.css.map */

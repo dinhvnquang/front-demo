@@ -1,0 +1,75 @@
+
+.section-sticky {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .content {
+    display: flex;
+
+    .left {
+      width: 33.33%;
+    }
+
+    .right {
+      width: 66.66%;
+    }
+  }
+
+  .sticky {
+      padding: 30px 30px 7px;
+    list-style: none;
+
+    ul {
+      list-style: none;
+    }
+
+    li {
+      margin-bottom: 12px;
+      position: relative;
+      padding-left: 20px;
+      cursor: pointer;
+
+
+      &:before {
+        content: '';
+        height: 4px;
+        width: 4px;
+        background-color: green;
+        position: absolute;
+        left: 0;
+        top: 8px;
+        border-radius: 50%;
+      }
+
+      &.active {
+        font-weight: bold;
+        color: red;
+
+        &:before {
+          height: 8px;
+          width: 8px;
+          background-color: red;
+          top: 7px;
+        }
+      }
+    }
+  }
+
+  .tab-text {
+    border-radius: 20px;
+    overflow: hidden;
+    margin-bottom: 50px;
+
+    .title {
+      font-size: 30px;
+      padding: 20px;
+      background: green;
+      margin: 0;
+    }
+
+    .description {
+      padding: 20px 30px;
+    }
+  }
+}
