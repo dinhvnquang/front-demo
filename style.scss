@@ -1,34 +1,45 @@
+body {
+  margin: 0;
+}
 .section-sticky {
   overflow: hidden;
   .container {
     max-width: 1200px;
     margin: 0 auto;
+    background-color: inherit;
   }
 
   .content {
     display: flex;
+    background-color: inherit;
 
     .left {
       width: 33.33%;
+      background-color: inherit;
     }
 
     .right {
       width: 66.66%;
     }
   }
+  .inner-wrapper-sticky {
+    background-color: inherit;
+  }
 
   .sticky {
     padding: 30px 30px 7px;
     list-style: none;
+    background-color: inherit;
 
     #dinamicMenu {
       position: relative;
+      background-color: inherit;
 
       &:before {
         content: '';
         height: 1000vh;
         width: 2px;
-        background-color: #fff;
+        background-color: inherit;
         position: absolute;
         bottom: calc(100% - 5px);
         left: 3px;

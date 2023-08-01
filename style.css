@@ -1,31 +1,43 @@
+body {
+  margin: 0;
+}
+
 .section-sticky {
   overflow: hidden;
 }
 .section-sticky .container {
   max-width: 1200px;
   margin: 0 auto;
+  background-color: inherit;
 }
 .section-sticky .content {
   display: flex;
+  background-color: inherit;
 }
 .section-sticky .content .left {
   width: 33.33%;
+  background-color: inherit;
 }
 .section-sticky .content .right {
   width: 66.66%;
 }
+.section-sticky .inner-wrapper-sticky {
+  background-color: inherit;
+}
 .section-sticky .sticky {
   padding: 30px 30px 7px;
   list-style: none;
+  background-color: inherit;
 }
 .section-sticky .sticky #dinamicMenu {
   position: relative;
+  background-color: inherit;
 }
 .section-sticky .sticky #dinamicMenu:before {
   content: "";
   height: 1000vh;
   width: 2px;
-  background-color: #fff;
+  background-color: inherit;
   position: absolute;
   bottom: calc(100% - 5px);
   left: 3px;
@@ -49,13 +61,16 @@
   color: green;
   font-weight: bold;
 }
+.section-sticky .sticky ul.sub-active > li:before {
+  background-color: green;
+}
 .section-sticky .sticky ul.prev > li:before {
   background-color: green;
   border-color: #0f470f;
 }
 .section-sticky .sticky ul ul li.active:before {
   height: 2px;
-  width: 13px;
+  width: 11px;
   border-radius: 0;
   left: 5px;
   top: 7px;
@@ -66,7 +81,7 @@
 }
 .section-sticky .sticky ul ul li:before {
   height: 2px;
-  width: 8px;
+  width: 6px;
   border-radius: 0;
   left: 5px;
   top: 7px;
